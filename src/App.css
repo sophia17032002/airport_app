@@ -1,38 +1,225 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .App {
+    text-align: center;
+    background-color: #04210c;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-title {
+    margin: 1rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-main {
+    padding: 2rem;
 }
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    color: azure;
+}
+
+.dropdown-with-value {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-with-value select {
+    margin-right: 10px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: black;
+    color: rgb(136, 141, 145);
+}
+
+.selected-value {
+    font-weight: bold;
+    color: #007bff; 
+}
+
+.results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+
+.result-item {
+    border: 1px solid #031f1340;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: left;
+    color: aliceblue;
+    background-color: #115224;
+}
+
+.flight-logo {
+    width: 80px;
+    height: 80px;
+    padding-left: 30%;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+} */
+
+
+.App {
+    text-align: center;
+    background-color: #04210c;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.App-logo {
+  width: 70rem;
+  height: 30rem;
+}
+
+.App-header {
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-title {
+    margin: 1rem 0;
+}
+
+.App-main {
+    padding: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    color: azure;
+    margin-bottom: 0.5rem;
+    text-align: center; 
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-items: center;
+    margin-left: 6rem;
+}
+
+.result-item {
+    border: 1px solid #031f1340;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    color: aliceblue;
+    background-color: #115224;
+    justify-items: center;
+}
+
+
+.partner-name{
+    font-size: 30px;
+}
+
+.flight-logo {
+    width: 80px;
+    height: 80px;
+}
+
+.error-message {
+    color: rgb(237, 252, 25);
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #4abe99;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 12px 18px 12px 18px;
+    margin: 1rem 9rem 3rem 1rem
+}
+
+button:hover {
+    background-color: #105d44;
+}
+
+.result-item {
+    margin: 1rem 0;
+}
+
+.result-item p {
+    margin: 0.5rem 0;
+}
+
+.result-item .miles {
+    font-size: 3rem; /* Larger font size for miles */
+    padding-top: 2rem;
+    font-weight: bold;
+}
+
+.result-item .tax {
+    font-size: 1.5rem; /* Smaller font size for tax */
+    color: #bbbbbb; /* Lighter color for tax */
+}
+
+.result-item .description {
+     /* Spacing above the description */
+    font-size: 1rem; /* Font size for description */
+    color: #ffffff; /* Description color */
+}
+
+
+
